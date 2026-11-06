@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0b1f44">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Asisten FTTH">
+<link rel="manifest" href="./manifest-asisten.json">
+<link rel="icon" href="./icons/asisten-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="./icons/asisten-apple-180.png">
+<script src="./support.js"></script>
+</head>
+<body>
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200"><rect width="300" height="200" fill="#12336b"/><rect x="95" y="60" width="110" height="64" rx="16" fill="#fff"/><path d="M125 124 L125 146 L148 124 Z" fill="#fff"/><circle cx="127" cy="92" r="6" fill="#12336b"/><circle cx="150" cy="92" r="6" fill="#12336b"/><circle cx="173" cy="92" r="6" fill="#12336b"/></svg></template>
+<x-dc>
+<helmet>
+<title>Asisten AI FTTH</title>
+<script>window.name = 'ftth-ai-embed'; document.documentElement.style.height = '100%'; document.body.style.cssText = 'margin:0;height:100%;background:#eaf0f9'; try { if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) navigator.serviceWorker.register('./sw-asisten.js').catch(function () {}); } catch (e) {}</script>
+</helmet>
+<div style="position:fixed;inset:0;background:linear-gradient(160deg,#dbe7fb,#eef3fb 45%,#dff3ea);display:flex;flex-direction:column">
+  <dc-import name="Agent Telegram FTTH" hint-size="100%,100%" style="flex:1;min-height:0"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
